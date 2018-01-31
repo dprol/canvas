@@ -97,13 +97,11 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
 
-    //
-    // http://easings.net/#easeInOutQuart
     //  t: current time
     //  b: beginning value
     //  c: change in value
     //  d: duration
-    //
+
     function easeInOutQuart(t, b, c, d) {
       if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
       return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
@@ -113,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   circleProgress('.counter');
 
-  // Gibt eine Zufallszahl zwischen min (inklusive) und max (exklusive) zurück
   function getRandom(min, max) {
     return Math.random() * (max - min) + min;
   }
